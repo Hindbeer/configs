@@ -1,19 +1,35 @@
-# kuve env
+# ❄️ kuve env
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Hindbeer/configs)
 ![License](https://img.shields.io/github/license/Hindbeer/configs)
 
-Wallpapers and configs for my software and systems
+Wallpapers and configs for my system
 
-# content
+![screenshot](./screenshots/screen.png)
+
+# ⭐️ Features
+
+- **dwn**
+- **slstatus**
+- **wallpapers**
+- **nixos**
+
+# 📦 content
 
 This repository contains files such as:
 
-- **wallpapers** -
-- **nixos** -
-- **software** -
-- **scripts** -
+- **wallpapers** - wallpapers for pc and phone
+- **nix** - all configurations for nixos
+  - **nix-os** - system configuration
+    - **mydwm** - my dwm build
+    - **slstatus** - my slstatus build
+  - **home-manager** - home-manager configurations
+    - **modules** - separate configuration for packages
+- **scripts** - my scripts
 
-# contacts
+[!TIP]
+All this may change over time. If you have any recommendations, you can contact me at the link below.
+
+# 👥 contacts
 
 If you have any questions or suggestions, you can contact me at Telegram: [@G0golMogol](https://t.me/G0golMogol)
