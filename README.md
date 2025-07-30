@@ -27,8 +27,8 @@ This repository contains files such as:
     - **modules** - separate configuration for packages
 - **scripts** - my scripts
 
-[!NOTE]
-All this may change over time. If you have any recommendations, you can contact me at the link below.
+> [!NOTE]
+> All this may change over time. If you have any recommendations, you can contact me at the link below. [!NOTE]
 
 # 👥 contacts
 
