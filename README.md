@@ -1,11 +1,11 @@
 # ❄️ kuve env
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Hindbeer/configs)
-![License](https://img.shields.io/github/license/Hindbeer/configs)
-
 Wallpapers and configs for my system
 
 ![screenshot](./screenshots/screen.png)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/Hindbeer/configs)
+![License](https://img.shields.io/github/license/Hindbeer/configs)
 
 # ⭐️ Features
 

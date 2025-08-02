@@ -2,7 +2,9 @@
 
 {
   imports = [
+    ./modules/bundle.nix
     ./home-packages.nix
+    # ./home-fonts.nix
   ];
 
   home.username = "kuve";

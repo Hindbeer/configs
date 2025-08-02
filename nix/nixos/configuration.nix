@@ -48,6 +48,7 @@ in
   users.users.kuve = {
     isNormalUser = true;
     description = "kuve";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" "jackaudio" ];
     packages = with pkgs; [];
   };
@@ -60,7 +61,7 @@ in
     enable = true;
   };
   
-  services.xserver.videoDrivers = ["nvidia"];
+  # services.xserver.videoDrivers = ["nvidia"];
   
   hardware.nvidia = {
     modesetting.enable = true;
@@ -72,18 +73,35 @@ in
 
   # Firefox
   programs.firefox.enable = true;
-
+  
   # Steam
   programs.steam.enable = true;
 
-  # DWM
-  services.xserver = {
+  programs.zsh = {
     enable = true;
-    windowManager.dwm.enable = true;
-    windowManager.dwm.package = pkgs.dwm.overrideAttrs {
-      src = ./mydwm/dwm;      
+    ohMyZsh = {
+      enable = true;
+      theme = "bira";
     };
+  }; 
+
+  # DWM
+  # services.xserver = {
+  #   enable = true;
+  #   windowManager.dwm.enable = true;
+  #   windowManager.dwm.package = pkgs.dwm.overrideAttrs {
+  #     src = ./mydwm/dwm;      
+  #   };
+  # };
+
+  # hyprland
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
   };
+  
+  programs.hyprlock.enable = true;
+  security.pam.services.hyprlock = {};
 
   # Pipewire
   security.rtkit.enable = true;
@@ -102,19 +120,28 @@ in
     rofi # menu apps
     fastfetch # fetch app
     feh # wallpaper
-    customSlstatus # custom slstatus
+    # customSlstatus # custom slstatus
     pulseaudio # pulse auidio
     alsa-utils # alsa utils
     python313 # python
     discord-ptb # discord
     home-manager
-    xorg.xinit 
-    xorg.xorgserver
+    hyprlock
+    zsh
+    # xorg.xinit 
+    # xorg.xorgserver
   ];
 
   # Fonts
   fonts.packages = with pkgs; [
-    font-awesome 
+    jetbrains-mono
+    noto-fonts
+    noto-fonts-emoji
+    twemoji-color-font
+    font-awesome
+    powerline-fonts
+    powerline-symbols
+    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; }) 
   ];
 
   system.stateVersion = "24.11";
