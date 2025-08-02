@@ -26,6 +26,7 @@ This repository contains files such as:
     - **slstatus** - my slstatus build
   - **home-manager** - home-manager configurations
     - **modules** - separate configuration for packages
+      - **hyprland** - Configuration for hyprland and its add-ons
 - **scripts** - my scripts
 
 # 📀 installation
