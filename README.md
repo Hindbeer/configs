@@ -32,22 +32,22 @@ This repository contains files such as:
 
 Installing the version with hyprland
 
-1. Install [NixOS](https://nixos.org/)
+1. **Install [NixOS](https://nixos.org/)**
 
-2. Clone the repository
+2. **Clone the repository**
 
 ```bash
 git clone https://github.com/Hindbeer/configs
 cd configs/nix/
 ```
 
-3. Put your `hardware-configuration.nix` file there
+3. **Put your `hardware-configuration.nix` file there**
 
 ```bash
 cp /etc/nixos/hardware-configuration.nix ./
 ```
 
-4. Edit the `flake.nix`, `./nix/configuration.nix`, `./home-manager/home.nix` file if needed
+4. **Edit the `flake.nix`, `./nix/configuration.nix`, `./home-manager/home.nix` file if needed**
 
 example `flake.nix`
 
@@ -85,7 +85,7 @@ example `flake.nix`
 }
 ```
 
-5. Rebuilding
+5. **Rebuilding**
 
 ```bash
 git add .
@@ -96,13 +96,13 @@ home-manager switch --flake ./#<hostname>
 > [!NOTE]
 > All this may change over time. If you have any recommendations, you can contact me at the link below.
 
-# 🖼 DWM version
+# 📁 DWM version
 
 Edit configs for dwm build
 
 ![screen](./screenshots/screen.png)
 
-1. Edit `./home-manager/modules/bundle.nix`
+1. **Edit `./home-manager/modules/bundle.nix`**
 
 ```diff
 {
@@ -116,7 +116,7 @@ Edit configs for dwm build
 }
 ```
 
-2. Edit `./nixos/configuration.nix`
+2. **Edit `./nixos/configuration.nix`**
 
 ```diff
 ...
@@ -176,7 +176,7 @@ Edit configs for dwm build
 ...
 ```
 
-3. Rebuilding
+3. **Rebuilding**
 
 ```bash
 git add .
